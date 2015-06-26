@@ -20,4 +20,11 @@ public class Busca {
 		return -1;
 	}
 
+	public static int linear(Object[] vetor, Object elementoProcurado) {
+		for (int i = 0; i < vetor.length; i++)
+			if (vetor[i].equals(elementoProcurado))
+				return i;
+		return -1; // Não achou, retorna -1
+	}
+
 }
